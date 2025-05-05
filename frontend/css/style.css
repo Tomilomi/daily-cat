@@ -1,0 +1,31 @@
+body {
+    background-color: #a89884;
+    color: #3f3b39;
+}
+
+header {
+    background-color: #675c55;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#clock {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #b8b940;
+}
+
+.cat-container {
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+#catGif {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+#cat-container{
+    color: #3f3b39;
+}
