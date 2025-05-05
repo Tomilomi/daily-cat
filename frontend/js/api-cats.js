@@ -1,9 +1,27 @@
+
 const host = "http://localhost:3000"
 
 //const actualDate = new Date()
 
 //let aactualMonth = actualDate.prototype.getMonth()
 //let aactualDay = actualDate.prototype.getDay()
+
+function dateDayNumber(date) {
+    const start = new Date(date.getFullYear(), 0, 0); // 0 = 31 de diciembre del año anterior
+    const diff = date - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(diff / oneDay);
+}
+
+
+function clock() {
+    let date = new Date()
+    let seconds = date.getSeconds();
+    let minutes = date.getMinutes()
+    let hours = date.getHours()
+    let day = dateDayNumber(date)
+    document.getElementById("clock").innerHTML = `${day}:${hours}:${minutes}:${seconds}`
+}
 
 
 async function loadCat(event, catNumber) {
@@ -54,3 +72,5 @@ function blobToUrl(blob) {
 document.addEventListener('DOMContentLoaded', function () {
     loadCat()
 })
+
+setInterval(clock, 1000)
