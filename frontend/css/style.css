@@ -1,24 +1,30 @@
 body {
-    background-color: #a89884;
     color: #3f3b39;
+    background-image:  linear-gradient(#795757 2.3000000000000003px, transparent 2.3000000000000003px), linear-gradient(to right, #795757 2.3000000000000003px, #FFF0D1 2.3000000000000003px);
+    background-size: 46px 46px;
 }
 
+
+
 header {
-    background-color: #675c55;
+    background-color: #795757;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+
 #clock {
     font-weight: bold;
     font-size: 1.25rem;
-    color: #b8b940;
+    color: #f0dab5;
 }
 
 .cat-container {
     max-width: 600px;
     margin: 80px auto;
     text-align: center;
+    background-color: #e6d6be;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.6);
 }
 
 #catGif {
@@ -26,6 +32,6 @@ header {
     object-fit: contain;
 }
 
-#cat-container{
-    color: #3f3b39;
+main{
+    color: #3B3030;
 }
