@@ -1,37 +1,91 @@
+/* Estilo general del body - modo claro */
 body {
     color: #3f3b39;
-    background-image:  linear-gradient(#795757 2.3000000000000003px, transparent 2.3000000000000003px), linear-gradient(to right, #795757 2.3000000000000003px, #FFF0D1 2.3000000000000003px);
-    background-size: 46px 46px;
+    background-image: linear-gradient(#607274 2.3px, transparent 2.3px),
+                      linear-gradient(to right, #607274 2.3px, #FAEED1 2.3px);
+    background-size: 40px 40px;
+    transition: all 0.3s ease-in-out;
 }
 
-
-
-header {
-    background-color: #795757;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+/* Contenido principal */
+main {
+    color: #3B3030;
 }
 
+/* Header (nuevo, ya que ya no usamos id="header") */
+#cat-header {
+    background-color: #FFF0D1;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Reloj */
+
+#clock-conteiner {
+    width: 100%;
+}
 
 #clock {
     font-weight: bold;
     font-size: 1.25rem;
-    color: #f0dab5;
-}
-
-.cat-container {
-    max-width: 600px;
-    margin: 80px auto;
+    color: #DED0B6;
     text-align: center;
-    background-color: #e6d6be;
-    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.6);
+    background-color: #607274;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.1%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #607274;
 }
 
+#lightModeBtn {
+    border-color: #a38b5c;
+    border-width: 2px;
+}
+
+#darkModeBtn {
+    border-width: 2px;
+}
+
+
+/* Contenedor del gato */
+#cat-container {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #FFF2D8;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Imagen del gato */
 #catGif {
     max-height: 400px;
     object-fit: contain;
 }
 
-main{
-    color: #3B3030;
+/* --- Modo oscuro --- */
+body.darkmode {
+    color: #e6d6be;
+    background-image: linear-gradient(#e6d6be 2.3px, transparent 2.3px),
+                      linear-gradient(to right, #e6d6be 2.3px, #795757 2.3px);
+    background-size: 46px 46px;
+}
+
+body.darkmode header {
+    background-color: #3B3030;
+}
+
+body.darkmode .cat-container {
+    background-color: #3B3030;
+    color: #f0dab5;
+}
+
+/* Ajustes para que el botón de modo también se vea bien */
+button#lightModeBtn,
+button#darkModeBtn {
+    font-size: 1.25rem;
 }
