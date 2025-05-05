@@ -9,7 +9,7 @@ Built with Node.js, Express, CORS, and a custom frontend to bring joy to cat lov
 
 - 🐾 Daily-changing cat GIFs
 - 🔁 Backend API with Express
-- 🎨 Custom frontend interface (gruvbox pallet)
+- 🎨 Custom frontend interface
 - 🌍 CORS-enabled for secure cross-origin requests
 
 ---
