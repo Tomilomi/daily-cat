@@ -82,14 +82,23 @@ Just open frontend/index.html in your browser
 
 ## Future Improvents
 
-- dark mode toggle
+- dark mode toggle (Added)
 
 - cache gif for offline viewing
 
-- functional realtime clock
+- functional realtime clock (Added)
 
-- add more cat gifs
+- add more cat gifs (In progress)
 
 ## Preview
 
+### light mode
+
 ![preview](./public/preview.png)
+
+
+---
+
+### dark mode
+
+![preview](./public/preview-darkmode.png)
