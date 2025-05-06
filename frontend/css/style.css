@@ -2,9 +2,10 @@
 body {
     color: #3f3b39;
     background-image: linear-gradient(#607274 2.3px, transparent 2.3px),
-                      linear-gradient(to right, #607274 2.3px, #FAEED1 2.3px);
+                      linear-gradient(to right, #607274 2.3px, #faeed100 2.3px);
     background-size: 40px 40px;
     transition: all 0.3s ease-in-out;
+    background-color: #FAEED1;
 }
 
 /* Contenido principal */
@@ -17,6 +18,7 @@ main {
     background-color: #FFF0D1;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
 
 /* Reloj */
@@ -69,17 +71,20 @@ main {
 
 /* --- Modo oscuro --- */
 body.darkmode {
-    color: #e6d6be;
-    background-image: linear-gradient(#e6d6be 2.3px, transparent 2.3px),
-                      linear-gradient(to right, #e6d6be 2.3px, #795757 2.3px);
-    background-size: 46px 46px;
+    color: #DFD0B8;
+    background-image: linear-gradient(#DFD0B8 2.3px, transparent 2.3px),
+                      linear-gradient(to right, #DFD0B8 2.3px, #393e4600 2.3px);
+    background-size: 40px 40px;
+    background-color: #222831;
 }
 
-body.darkmode header {
-    background-color: #3B3030;
+.darkmode #cat-header {
+    background-color: #393E46;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-body.darkmode .cat-container {
+#cat-container.darkmode {
     background-color: #3B3030;
     color: #f0dab5;
 }
