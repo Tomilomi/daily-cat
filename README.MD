@@ -88,7 +88,7 @@ Just open frontend/index.html in your browser
 
 - functional realtime clock
 
-- add more cat gis
+- add more cat gifs
 
 ## Preview
 
