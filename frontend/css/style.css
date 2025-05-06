@@ -1,3 +1,7 @@
+* {
+    cursor: url(../assets/cursor.cur), auto !important;
+  }
+
 /* light mode */
 body {
     color: #3f3b39;
