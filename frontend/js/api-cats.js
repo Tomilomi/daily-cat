@@ -1,26 +1,19 @@
 
 const host = "http://localhost:3000"
 
-//const actualDate = new Date()
-
-//let aactualMonth = actualDate.prototype.getMonth()
-//let aactualDay = actualDate.prototype.getDay()
-
-function dateDayNumber(date) {
-    const start = new Date(date.getFullYear(), 0, 0); // 0 = 31 de diciembre del año anterior
-    const diff = date - start;
-    const oneDay = 1000 * 60 * 60 * 24;
-    return Math.floor(diff / oneDay);
-}
-
-
 function clock() {
     let date = new Date()
-    let seconds = date.getSeconds();
-    let minutes = date.getMinutes()
-    let hours = date.getHours()
-    let day = dateDayNumber(date)
-    document.getElementById("clock").innerHTML = `${day}:${hours}:${minutes}:${seconds}`
+    let endOfDay = new Date()
+    endOfDay.setHours(23, 59, 59, 999)
+
+    let remaining = endOfDay - date
+
+    let rHours = Math.floor(remaining / 1000 / 60 / 60)
+    let rMinutes = Math.floor((remaining / 1000 / 60) % 60)
+    let rSeconds = Math.floor((remaining / 1000) % 60)
+
+    document.getElementById("clock").innerHTML = 
+        `${rHours}h ${rMinutes}m ${rSeconds}s`
 }
 
 
@@ -67,7 +60,6 @@ function blobToUrl(blob) {
     return blolbResource = URL.createObjectURL(blob)
 }
 
-// Revisar
 
 document.addEventListener('DOMContentLoaded', function () {
     loadCat()
