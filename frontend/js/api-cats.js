@@ -51,7 +51,7 @@ async function renderingCat(cat) {
     catImageContainer.innerHTML = `
     <h1 class="mb-4">Your daily cat:</h1>
     <img src=${url} id="catGif" class="img-fluid rounded shadow" alt="Today's Cat GIF"/>
-    <p class="mt-3 text-muted">Come back tomorrow for a new cat!</p>
+    <p class="mt-3">Come back tomorrow for a new cat! 🐱</p>
     `
 }
 

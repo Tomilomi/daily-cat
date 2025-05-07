@@ -107,6 +107,9 @@ body.darkmode {
     border-color: #dfd0b8;
 }
 
+.darkmode #cat-note {
+    color: #dfd0b8;
+}
 
 button#lightModeBtn,
 button#darkModeBtn {
